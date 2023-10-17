@@ -12,7 +12,7 @@ while True:
 
     if Porcentaje<=10:
         Diccionario['verde'].on()
-
+        
     elif Porcentaje>10 and Porcentaje<20:
         Diccionario['Amarillo'].on()
     else :
@@ -20,4 +20,6 @@ while True:
         sleep(1)
         Diccionario['rojo'].off()
         sleep(1)
+
+    print('CPU:',Porcentaje)
         

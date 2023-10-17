@@ -5,12 +5,12 @@ import psutil
 Diccionario= {'rojo':LED(14),'verde':LED(15),'Amarillo':LED(16)}
 while True:
 
-    Porcentaje= input( psutil.cpu_percent(4))
+    Porcentaje:float= input( psutil.cpu_percent(4))
     Diccionario['verde'].off()  
     Diccionario['rojo'].off()  
     Diccionario['Amarillo'].off()   
 
-    if Porcentaje<=10:
+    if Porcentaje<10:
         Diccionario['verde'].on()
         
     elif Porcentaje>10 and Porcentaje<20:
